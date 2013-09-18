@@ -1,0 +1,181 @@
+/* ####################################################
+NOTE
+scss file for search component
+###################################################
+*/
+
+//@import "bootstrap-responsive";
+@import "compass";
+
+$gridFluidColumnWidth: 6.38298%;
+$gridFluidGutterWidth: 2.12766%;
+
+@mixin makeFluidRow() {
+  width: 100%;
+  @include clearfix();
+}
+@mixin makeFluidColumn($columns: 1, $offset: 0, $marginRate: 1) {
+  float: left;
+  margin-left: (($gridFluidColumnWidth * $offset) + ($gridFluidGutterWidth * ($offset - 1)) + ($gridFluidGutterWidth * 2)) * $marginRate;
+  width: ($gridFluidColumnWidth * $columns) + ($gridFluidGutterWidth * ($columns - 1));
+  
+  &:first-child {
+        margin-left: 0;
+  }
+}
+
+
+/** Global Fonts **/
+$Normal: 'ProximaNova-Regular';
+$Semibold: 'ProximaNova-Semibold';
+$Bold: 'ProximaNova-Bold';
+$Italic: 'ProximaNova-RegularIt';
+
+/** Global Type Size **/
+$PageHeading: 36px $Normal;
+$IntroText: 14px/20px $Normal;
+$Subheading: 20px/24px $Bold;
+$BodyText: 14px/17px $Normal;
+
+/** Global Color **/
+$Red: #96171A;
+$Gray: #5f6a72;
+$Lightgray: #D3D1C7;
+$Blue: #1E398D;
+$Orange: #F37021;
+
+/** Global Radius **/
+$LargeRadius: 20px;
+$SmallRadius: 4px;
+
+/** Global Lines **/
+$NormalLine: 1px solid $Lightgray;
+
+/** Global Drop Shadow **/
+$LargeShadow: 2px 3px 20px #5f6a72;
+$MediumShadow: 5px 5px 5px #c8ccce;
+$SmallShadow: 1px 1px 15px #8a9aa6;
+$TinyShadow: 0px 2px 5px #c8ccce;
+
+$margin_padding: 15px;
+$icon_font_size: 20px;
+
+
+
+
+
+
+
+/*********start of search component********/
+/**global */
+$grey:#888888;
+$yellow: #E5A053;
+$maroon:#96171A;
+$green:#447e2b;
+
+$marginZero:0px !important;
+@mixin input-medium(){
+  width: 150px;
+}
+@mixin input-small(){
+  width: 90px;
+}
+@mixin input-large(){
+  width: 210px;
+}
+$icon_font_size: 20px;
+span[data-icon] {
+  font-size: $icon_font_size;
+  margin-left: 10px;
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+}
+.ya-help-icon {
+  color: $yellow !important;
+}
+.ya-grey-border-bottom {
+    padding-bottom: 10px;
+    margin: $margin_padding 0;
+    border-bottom: 2px solid #ccc;
+  }
+  .ya-black-border-bottom {
+    @extend .ya-grey-border-bottom;
+    border-bottom: 2px solid #333;
+  }
+
+  
+
+/****end of global***/
+.ya-main-content{@media(max-width:480px){ padding:0;}}
+.ya-search-component{ 
+	 @include makeFluidRow();
+	 .ya-menu{ @include makeFluidColumn(3);@media(max-width:767px){ @include makeFluidColumn(12,0,0);  }}
+	 .ya-search-block{ max-width:710px; /***max -width of search component**/
+	 @include makeFluidColumn(9);@media(max-width:767px){ @include makeFluidColumn(12,0,0);  }
+	 .ya-search-boxes{
+	 		 @include makeFluidRow();
+	 	
+	 	.ya-search-option-1{ @include makeFluidColumn(6, 0, 0);@media(max-width:767px){ @include makeFluidColumn(12,0,0);  }
+@media (min-width: 768px) and (max-width: 979px){@include makeFluidColumn(12,0,0);}
+	 		}
+	 	
+	 	.ya-search-option-2{ @include makeFluidColumn(6, 0, 0);
+	 	@media(max-width:767px){ 
+		 	@include makeFluidColumn(12,0,0);  
+		 	.ya-top-space{margin:0;} 
+		 	.ya-Or{margin: 24px 10px 0;} 
+		 }
+	 		
+	 	@media (min-width: 768px) and (max-width: 979px){
+	 	@include makeFluidColumn(12,0,0);
+			.ya-top-space{margin:0;} 
+		 	.ya-Or{margin: 24px 10px 0;} 
+	 	}
+	 	}
+
+	 }
+	 
+	 .ya-top-space{ display: inline-block;margin: 41px 0 0;}
+	 .ya-row{@include makeFluidRow();}
+	 .ya-align-row{float:left;}
+	 .ya-Or{    font-size: 24px;   display: inline-block;margin: 65px 10px 0 ; @media(max-width:480px){margin:65px 5px 0;} }
+	 	
+	 	input[type="text"]{width:100px;@media(max-width:480px){width:85px;}}
+	 	
+	 	.ya-info-text{color:#006DD9; width:85px;@media(max-width:480px){width:85px;}}
+	 	
+	 	.ya-email{
+	 		@media(min-width:1200px){width:150px !important;}
+	 		@media(max-width:480px){width:85px !important;}
+	 		@media(max-width:980px){width: 115px !important;}
+	 		@media (min-width: 981px) and (max-width: 1199px){width: 100px !important;}
+	 	}
+	 	.control-group{margin:0 0 5px 0;}
+	 	.ya-checkbox-row{
+	 	 @include makeFluidRow();
+	 		.ya-checkbox-column{@include makeFluidColumn(6, 0, 0);}
+	 	}
+
+	 	@media (min-width: 768px) and (max-width: 979px){}
+	 	.ya-search-desktop{@media (min-width: 768px) and (max-width: 979px){display:none;}}
+	 	.ya-search-ipad{ margin:10px 0 0 0; @media (min-width: 768px) and (max-width: 979px){display:block;}}
+	 	.btn{@include input-medium();}
+
+	 }
+
+	 .ya-search-result{
+  @include makeFluidRow();
+    .ya-search-row-container{@include makeFluidRow();@extend .ya-grey-border-bottom;}
+    .ya-search-row{@include makeFluidRow(); margin: 0 0 10px;
+    .ya-name{@include makeFluidColumn(9,0,0); font-size: 18px;    font-weight: bold;@media(max-width:767px){margin: 2px 0 0 0;font-size: 16px; @include makeFluidColumn(6,0,0);}}
+    .ya-controls{@include makeFluidColumn(3,0,0); text-align:right;@media(max-width:767px){ @include makeFluidColumn(6,0,0);}}
+  
+    }
+    .ya-button-row{ .btn{@include input-medium();}}
+
+  
+
+	 }
+
+}

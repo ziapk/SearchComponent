@@ -1,0 +1,311 @@
+/* ####################################################
+NOTE
+scss file for search component
+###################################################
+*/
+/** Global Fonts **/
+/** Global Type Size **/
+/** Global Color **/
+/** Global Radius **/
+/** Global Lines **/
+/** Global Drop Shadow **/
+/*********start of search component********/
+/**global */
+span[data-icon] {
+  font-size: 20px;
+  margin-left: 10px;
+}
+@media (max-width: 767px) {
+  span[data-icon] {
+    font-size: 18px;
+  }
+}
+
+.ya-help-icon {
+  color: #e5a053 !important;
+}
+
+.ya-grey-border-bottom, .ya-black-border-bottom, .ya-search-component .ya-search-result .ya-search-row-container {
+  padding-bottom: 10px;
+  margin: 15px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.ya-black-border-bottom {
+  border-bottom: 2px solid #333;
+}
+
+/****end of global***/
+@media (max-width: 480px) {
+  .ya-main-content {
+    padding: 0;
+  }
+}
+
+.ya-search-component {
+  width: 100%;
+  overflow: hidden;
+  *zoom: 1;
+}
+.ya-search-component .ya-menu {
+  float: left;
+  margin-left: 2.12766%;
+  width: 23.40426%;
+}
+.ya-search-component .ya-menu:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  .ya-search-component .ya-menu {
+    float: left;
+    margin-left: 0%;
+    width: 100.00002%;
+  }
+  .ya-search-component .ya-menu:first-child {
+    margin-left: 0;
+  }
+}
+.ya-search-component .ya-search-block {
+  max-width: 710px;
+  /***max -width of search component**/
+  float: left;
+  margin-left: 2.12766%;
+  width: 74.4681%;
+}
+.ya-search-component .ya-search-block:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  .ya-search-component .ya-search-block {
+    float: left;
+    margin-left: 0%;
+    width: 100.00002%;
+  }
+  .ya-search-component .ya-search-block:first-child {
+    margin-left: 0;
+  }
+}
+.ya-search-component .ya-search-block .ya-search-boxes {
+  width: 100%;
+  overflow: hidden;
+  *zoom: 1;
+}
+.ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-1 {
+  float: left;
+  margin-left: 0%;
+  width: 48.93618%;
+}
+.ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-1:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-1 {
+    float: left;
+    margin-left: 0%;
+    width: 100.00002%;
+  }
+  .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-1:first-child {
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-1 {
+    float: left;
+    margin-left: 0%;
+    width: 100.00002%;
+  }
+  .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-1:first-child {
+    margin-left: 0;
+  }
+}
+.ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-2 {
+  float: left;
+  margin-left: 0%;
+  width: 48.93618%;
+}
+.ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-2:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-2 {
+    float: left;
+    margin-left: 0%;
+    width: 100.00002%;
+  }
+  .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-2:first-child {
+    margin-left: 0;
+  }
+  .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-2 .ya-top-space {
+    margin: 0;
+  }
+  .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-2 .ya-Or {
+    margin: 24px 10px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-2 {
+    float: left;
+    margin-left: 0%;
+    width: 100.00002%;
+  }
+  .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-2:first-child {
+    margin-left: 0;
+  }
+  .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-2 .ya-top-space {
+    margin: 0;
+  }
+  .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-2 .ya-Or {
+    margin: 24px 10px 0;
+  }
+}
+.ya-search-component .ya-search-block .ya-top-space {
+  display: inline-block;
+  margin: 41px 0 0;
+}
+.ya-search-component .ya-search-block .ya-row {
+  width: 100%;
+  overflow: hidden;
+  *zoom: 1;
+}
+.ya-search-component .ya-search-block .ya-align-row {
+  float: left;
+}
+.ya-search-component .ya-search-block .ya-Or {
+  font-size: 24px;
+  display: inline-block;
+  margin: 65px 10px 0;
+}
+@media (max-width: 480px) {
+  .ya-search-component .ya-search-block .ya-Or {
+    margin: 65px 5px 0;
+  }
+}
+.ya-search-component .ya-search-block input[type="text"] {
+  width: 100px;
+}
+@media (max-width: 480px) {
+  .ya-search-component .ya-search-block input[type="text"] {
+    width: 85px;
+  }
+}
+.ya-search-component .ya-search-block .ya-info-text {
+  color: #006DD9;
+  width: 85px;
+}
+@media (max-width: 480px) {
+  .ya-search-component .ya-search-block .ya-info-text {
+    width: 85px;
+  }
+}
+@media (min-width: 1200px) {
+  .ya-search-component .ya-search-block .ya-email {
+    width: 150px !important;
+  }
+}
+@media (max-width: 480px) {
+  .ya-search-component .ya-search-block .ya-email {
+    width: 85px !important;
+  }
+}
+@media (max-width: 980px) {
+  .ya-search-component .ya-search-block .ya-email {
+    width: 115px !important;
+  }
+}
+@media (min-width: 981px) and (max-width: 1199px) {
+  .ya-search-component .ya-search-block .ya-email {
+    width: 100px !important;
+  }
+}
+.ya-search-component .ya-search-block .control-group {
+  margin: 0 0 5px 0;
+}
+.ya-search-component .ya-search-block .ya-checkbox-row {
+  width: 100%;
+  overflow: hidden;
+  *zoom: 1;
+}
+.ya-search-component .ya-search-block .ya-checkbox-row .ya-checkbox-column {
+  float: left;
+  margin-left: 0%;
+  width: 48.93618%;
+}
+.ya-search-component .ya-search-block .ya-checkbox-row .ya-checkbox-column:first-child {
+  margin-left: 0;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .ya-search-component .ya-search-block .ya-search-desktop {
+    display: none;
+  }
+}
+.ya-search-component .ya-search-block .ya-search-ipad {
+  margin: 10px 0 0 0;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .ya-search-component .ya-search-block .ya-search-ipad {
+    display: block;
+  }
+}
+.ya-search-component .ya-search-block .btn {
+  width: 150px;
+}
+.ya-search-component .ya-search-result {
+  width: 100%;
+  overflow: hidden;
+  *zoom: 1;
+}
+.ya-search-component .ya-search-result .ya-search-row-container {
+  width: 100%;
+  overflow: hidden;
+  *zoom: 1;
+}
+.ya-search-component .ya-search-result .ya-search-row {
+  width: 100%;
+  overflow: hidden;
+  *zoom: 1;
+  margin: 0 0 10px;
+}
+.ya-search-component .ya-search-result .ya-search-row .ya-name {
+  float: left;
+  margin-left: 0%;
+  width: 74.4681%;
+  font-size: 18px;
+  font-weight: bold;
+}
+.ya-search-component .ya-search-result .ya-search-row .ya-name:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  .ya-search-component .ya-search-result .ya-search-row .ya-name {
+    margin: 2px 0 0 0;
+    font-size: 16px;
+    float: left;
+    margin-left: 0%;
+    width: 48.93618%;
+  }
+  .ya-search-component .ya-search-result .ya-search-row .ya-name:first-child {
+    margin-left: 0;
+  }
+}
+.ya-search-component .ya-search-result .ya-search-row .ya-controls {
+  float: left;
+  margin-left: 0%;
+  width: 23.40426%;
+  text-align: right;
+}
+.ya-search-component .ya-search-result .ya-search-row .ya-controls:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  .ya-search-component .ya-search-result .ya-search-row .ya-controls {
+    float: left;
+    margin-left: 0%;
+    width: 48.93618%;
+  }
+  .ya-search-component .ya-search-result .ya-search-row .ya-controls:first-child {
+    margin-left: 0;
+  }
+}
+.ya-search-component .ya-search-result .ya-button-row .btn {
+  width: 150px;
+}
