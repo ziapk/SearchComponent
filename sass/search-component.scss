@@ -112,25 +112,24 @@ span[data-icon] {
 	 @include makeFluidRow();
 	 .ya-menu{ @include makeFluidColumn(3);@media(max-width:767px){ @include makeFluidColumn(12,0,0);  }}
 	 .ya-search-block{ max-width:710px; /***max -width of search component**/
-	 @include makeFluidColumn(9);@media(max-width:767px){ @include makeFluidColumn(12,0,0);  }
+	 @include makeFluidColumn(9);@media(max-width:979px){ @include makeFluidColumn(12,0,0);  }
 	 .ya-search-boxes{
 	 		 @include makeFluidRow();
 	 	
 	 	.ya-search-option-1{ @include makeFluidColumn(6, 0, 0);@media(max-width:767px){ @include makeFluidColumn(12,0,0);  }
-@media (min-width: 768px) and (max-width: 979px){@include makeFluidColumn(12,0,0);}
+@media (min-width: 768px) and (max-width: 979px){@include makeFluidColumn(6,0,0);}
 	 		}
 	 	
 	 	.ya-search-option-2{ @include makeFluidColumn(6, 0, 0);
 	 	@media(max-width:767px){ 
 		 	@include makeFluidColumn(12,0,0);  
 		 	.ya-top-space{margin:0;} 
-		 	.ya-Or{margin: 24px 10px 0;} 
+		 	.ya-Or{} 
 		 }
 	 		
 	 	@media (min-width: 768px) and (max-width: 979px){
-	 	@include makeFluidColumn(12,0,0);
-			.ya-top-space{margin:0;} 
-		 	.ya-Or{margin: 24px 10px 0;} 
+	 	@include makeFluidColumn(6,0,0);
+		 	.ya-Or{} 
 	 	}
 	 	}
 

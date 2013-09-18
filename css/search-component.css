@@ -75,7 +75,7 @@ span[data-icon] {
 .ya-search-component .ya-search-block:first-child {
   margin-left: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 979px) {
   .ya-search-component .ya-search-block {
     float: left;
     margin-left: 0%;
@@ -112,7 +112,7 @@ span[data-icon] {
   .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-1 {
     float: left;
     margin-left: 0%;
-    width: 100.00002%;
+    width: 48.93618%;
   }
   .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-1:first-child {
     margin-left: 0;
@@ -138,24 +138,15 @@ span[data-icon] {
   .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-2 .ya-top-space {
     margin: 0;
   }
-  .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-2 .ya-Or {
-    margin: 24px 10px 0;
-  }
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-2 {
     float: left;
     margin-left: 0%;
-    width: 100.00002%;
+    width: 48.93618%;
   }
   .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-2:first-child {
     margin-left: 0;
-  }
-  .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-2 .ya-top-space {
-    margin: 0;
-  }
-  .ya-search-component .ya-search-block .ya-search-boxes .ya-search-option-2 .ya-Or {
-    margin: 24px 10px 0;
   }
 }
 .ya-search-component .ya-search-block .ya-top-space {
