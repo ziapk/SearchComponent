@@ -11,6 +11,14 @@ scss file for search component
 /** Global Drop Shadow **/
 /*********start of search component********/
 /**global */
+.ya-link {
+  color: #b4341d;
+  font-family: "ProximaNova-Semibold";
+}
+.ya-link:hover {
+  color: #b4341d;
+}
+
 span[data-icon] {
   font-size: 20px;
   margin-left: 10px;
@@ -36,12 +44,6 @@ span[data-icon] {
 }
 
 /****end of global***/
-@media (max-width: 480px) {
-  .ya-main-content {
-    padding: 0;
-  }
-}
-
 .ya-search-component {
   width: 100%;
   overflow: hidden;
@@ -183,9 +185,14 @@ span[data-icon] {
 .ya-search-component .ya-search-block input[type="text"] {
   width: 100px;
 }
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
   .ya-search-component .ya-search-block input[type="text"] {
-    width: 85px;
+    width: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .ya-search-component .ya-search-block input[type="text"] {
+    width: auto;
   }
 }
 .ya-search-component .ya-search-block .ya-info-text {
@@ -194,17 +201,12 @@ span[data-icon] {
 }
 @media (max-width: 480px) {
   .ya-search-component .ya-search-block .ya-info-text {
-    width: 85px;
+    width: auto;
   }
 }
 @media (min-width: 1200px) {
   .ya-search-component .ya-search-block .ya-email {
     width: 150px !important;
-  }
-}
-@media (max-width: 480px) {
-  .ya-search-component .ya-search-block .ya-email {
-    width: 85px !important;
   }
 }
 @media (max-width: 980px) {
@@ -215,6 +217,11 @@ span[data-icon] {
 @media (min-width: 981px) and (max-width: 1199px) {
   .ya-search-component .ya-search-block .ya-email {
     width: 100px !important;
+  }
+}
+@media (max-width: 767px) {
+  .ya-search-component .ya-search-block .ya-email {
+    width: auto !important;
   }
 }
 .ya-search-component .ya-search-block .control-group {
